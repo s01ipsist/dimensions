@@ -1,4 +1,4 @@
-require 'dimensions/test_case'
+require_relative 'dimensions/test_case'
 
 class TestReader < Dimensions::TestCase
   def test_identifying_gif_file
