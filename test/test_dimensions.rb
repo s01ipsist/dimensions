@@ -1,4 +1,4 @@
-require 'dimensions/test_case'
+require_relative 'dimensions/test_case'
 
 class TestDimensions < Dimensions::TestCase
   def test_animated_gif_dimensions
