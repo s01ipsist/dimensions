@@ -13,5 +13,6 @@ spec = Gem::Specification.new do |s|
   s.summary      = "Pure Ruby dimension measurement for GIF, PNG, JPEG and TIFF images"
   s.description  = "A pure Ruby library for measuring the dimensions and rotation angles of GIF, PNG, JPEG and TIFF images."
   s.files        = Dir["README.md", "LICENSE", "lib/**/*.rb"]
+  s.test_files   = Dir["test/**/*"]
   s.require_path = "lib"
 end
