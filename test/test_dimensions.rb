@@ -34,6 +34,14 @@ class TestDimensions < Dimensions::TestCase
     assert_dimensions "windows.bmp", 127, 64
   end
 
+  def test_ico_dimensions
+    assert_dimensions "real.ico", 16, 16
+  end
+
+  def test_cur_dimensions
+    assert_dimensions "50x256.cur", 50, 256
+  end
+
   def test_os2_bmp_dimensions
     assert_dimensions "os2.bmp", 127, 64
   end
