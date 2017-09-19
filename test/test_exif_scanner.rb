@@ -1,4 +1,4 @@
-require 'dimensions/test_case'
+require_relative 'dimensions/test_case'
 
 class TestExifScanner < Dimensions::TestCase
   def test_scanning_exif_with_top_left_orientation

@@ -1,4 +1,4 @@
-require 'dimensions/test_case'
+require_relative 'dimensions/test_case'
 
 class TestDimensions < Dimensions::TestCase
   def test_animated_gif_dimensions
@@ -28,6 +28,22 @@ class TestDimensions < Dimensions::TestCase
 
   def test_tiff_dimensions
     assert_dimensions "short.tif", 50, 20
+  end
+
+  def test_windows_bmp_dimensions
+    assert_dimensions "windows.bmp", 127, 64
+  end
+
+  def test_ico_dimensions
+    assert_dimensions "real.ico", 16, 16
+  end
+
+  def test_cur_dimensions
+    assert_dimensions "50x256.cur", 50, 256
+  end
+
+  def test_os2_bmp_dimensions
+    assert_dimensions "os2.bmp", 127, 64
   end
 
   def assert_dimensions(filename, expected_width, expected_height)

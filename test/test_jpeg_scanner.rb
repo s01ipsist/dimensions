@@ -1,4 +1,4 @@
-require 'dimensions/test_case'
+require_relative 'dimensions/test_case'
 
 class TestJpegScanner < Dimensions::TestCase
   def test_scanning_jpeg
